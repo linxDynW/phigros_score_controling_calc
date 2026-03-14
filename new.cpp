@@ -45,7 +45,7 @@ uint64_t function(int S, int N) {
             if (S != r((180 * N - 9 * k + 20 * mc) * 5000LL, N)) {
                 continue;
             }
-            tl = max((k + 6) / 7, (2 * k - N) / 13);
+            tl = max((k + 6) / 7, (2 * k - N + 12) / 13);
             tl = max(tl, ((k + (N / (mc + 1))) + 6) / 7);
             tr = min((3 * k) / 20, (N + k - mc) / 7);
             for (t = tl; t <= tr; t++) {
